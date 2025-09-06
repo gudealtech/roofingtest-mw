@@ -23,17 +23,17 @@ export default function ContactPage() {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
       description: "Send us your inquiries and requests",
-      details: "info@roofmaterials.com",
+      details: "info@gudealcanada.com",
       action: "Send Email",
-      href: "mailto:info@roofmaterials.com",
+      href: "mailto:info@gudealcanada.com",
     },
     {
       icon: <MessageCircle className="h-6 w-6" />,
       title: "Sales Inquiries",
       description: "For quotes and bulk orders",
-      details: "sales@roofmaterials.com",
+      details: "sales@gudealcanada.com",
       action: "Contact Sales",
-      href: "mailto:sales@roofmaterials.com",
+      href: "mailto:sales@gudealcanada.com",
     },
   ]
 
@@ -49,19 +49,19 @@ export default function ContactPage() {
       icon: <Users className="h-5 w-5" />,
       title: "Sales Department",
       description: "Product inquiries, quotes, and orders",
-      contact: "sales@roofmaterials.com",
+      contact: "sales@gudealcanada.com",
     },
     {
       icon: <Truck className="h-5 w-5" />,
       title: "Logistics",
       description: "Delivery scheduling and tracking",
-      contact: "logistics@roofmaterials.com",
+      contact: "logistics@gudealcanada.com",
     },
     {
       icon: <Building className="h-5 w-5" />,
       title: "Customer Service",
       description: "General support and account management",
-      contact: "support@roofmaterials.com",
+      contact: "support@gudealcanada.com",
     },
   ]
 
@@ -185,11 +185,12 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="RoofMaterials Location"
+                  title="Gudeal Canada Location"
                 ></iframe>
               </div>
               <p className="text-sm text-muted-foreground mt-4">
-                Located in the heart of the industrial district with easy access for pickup and delivery services.
+                Located in the heart of the industrial district with easy access for pickup and delivery services across
+                Canada.
               </p>
             </div>
           </div>
@@ -212,7 +213,7 @@ export default function ContactPage() {
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="mailto:sales@roofmaterials.com">
+                <a href="mailto:sales@gudealcanada.com">
                   <Mail className="mr-2 h-5 w-5" />
                   Email Sales
                 </a>

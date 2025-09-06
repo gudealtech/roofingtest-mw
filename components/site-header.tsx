@@ -31,14 +31,14 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-16 items-center justify-between px-2">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="h-8 w-8 bg-primary rounded-md flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">RM</span>
+        <div className="flex items-center space-x-1">
+          <Link href="/" className="flex items-center space-x-1">
+            <div className="h-48 w-48 rounded-md overflow-hidden bg-transparent">
+              <img src="/gudeal-logo.png" alt="Gudeal Canada" className="h-full w-full object-contain bg-transparent" />
             </div>
-            <span className="font-bold text-xl">RoofMaterials</span>
+            <span className="font-bold text-2xl">Gudeal Canada</span>
           </Link>
         </div>
 
@@ -75,11 +75,15 @@ export function SiteHeader() {
             <div className="flex flex-col h-full">
               {/* Mobile Header */}
               <div className="flex items-center justify-between pb-4 border-b">
-                <div className="flex items-center space-x-2">
-                  <div className="h-6 w-6 bg-primary rounded-md flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold text-xs">RM</span>
+                <div className="flex items-center space-x-1">
+                  <div className="h-36 w-36 rounded-md overflow-hidden bg-transparent">
+                    <img
+                      src="/gudeal-logo.png"
+                      alt="Gudeal Canada"
+                      className="h-full w-full object-contain bg-transparent"
+                    />
                   </div>
-                  <span className="font-bold">RoofMaterials</span>
+                  <span className="font-bold">Gudeal Canada</span>
                 </div>
                 <Button variant="ghost" size="sm" onClick={() => setIsOpen(false)} className="px-2">
                   <X className="h-4 w-4" />

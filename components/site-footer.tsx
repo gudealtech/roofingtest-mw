@@ -13,14 +13,18 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="h-8 w-8 bg-primary rounded-md flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">RM</span>
+              <div className="h-24 w-24 rounded-md overflow-hidden bg-transparent">
+                <img
+                  src="/gudeal-logo-grayscale.svg"
+                  alt="Gudeal Canada"
+                  className="h-full w-full object-contain bg-transparent"
+                />
               </div>
-              <span className="font-bold text-xl">RoofMaterials</span>
+              <span className="font-bold text-xl">Gudeal Canada</span>
             </div>
             <p className="text-secondary-foreground/80 mb-4 max-w-md">
-              Your trusted partner for professional roofing materials. Serving contractors and distributors with quality
-              products and exceptional service.
+              Your trusted partner for professional roofing materials. Serving contractors and distributors across
+              Canada with quality products and exceptional service.
             </p>
           </div>
 
@@ -63,7 +67,7 @@ export function SiteFooter() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span className="text-secondary-foreground/80">info@roofmaterials.com</span>
+                <span className="text-secondary-foreground/80">info@gudealcanada.com</span>
               </div>
             </div>
           </div>

@@ -15,31 +15,45 @@ export default function HomePage() {
   const featuredProducts = [
     {
       id: 1,
-      name: "Premium Underlayment",
-      category: "underlayment",
+      name: "Premium Valley Flashing",
+      category: "valley",
       image: "/placeholder-d525q.png",
-      description: "High-performance synthetic underlayment for superior protection",
+      description: "Durable valley solutions for superior water channeling and protection",
     },
     {
       id: 2,
-      name: "Ice & Water Shield Pro",
-      category: "iceWaterShields",
+      name: "High-Performance Underlayment",
+      category: "synthetic-underlayment",
       image: "/placeholder-yw5p1.png",
-      description: "Self-adhering waterproof membrane for critical areas",
+      description: "Advanced synthetic protection for long-lasting roof performance",
     },
     {
       id: 3,
-      name: "Ridge Vents",
-      category: "vents",
+      name: "Professional Coil Nails",
+      category: "coil-nails",
       image: "/placeholder-l8q35.png",
-      description: "Professional-grade ventilation systems for optimal airflow",
+      description: "High-quality fasteners for reliable roofing installations",
     },
     {
       id: 4,
-      name: "Work Gloves Pro",
-      category: "gloves",
+      name: "Roof & Bathroom Vents",
+      category: "vents",
       image: "/placeholder-bc8ko.png",
-      description: "Durable work gloves designed for roofing professionals",
+      description: "Complete ventilation solutions for optimal airflow and moisture control",
+    },
+    {
+      id: 5,
+      name: "Plumbing Boot Flashing",
+      category: "plumbing-flashing",
+      image: "/placeholder-d525q.png",
+      description: "Watertight sealing around pipe penetrations and roof fixtures",
+    },
+    {
+      id: 6,
+      name: "Blades & Gloves",
+      category: "accessories",
+      image: "/placeholder-yw5p1.png",
+      description: "Essential tools and safety gear for roofing professionals",
     },
   ]
 
@@ -106,7 +120,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredProducts.map((product) => (
               <Card key={product.id} className="group hover:shadow-lg transition-shadow">
                 <CardHeader className="p-0">

@@ -77,23 +77,14 @@ export default function ProductDetailClient() {
               <div>
                 <div className="flex items-center gap-3 mb-3">
                   <Badge variant="outline">{t(product.category)}</Badge>
-                  {product.inStock ? (
-                    <Badge variant="default" className="bg-green-100 text-green-800 border-green-200">
-                      <Check className="w-3 h-3 mr-1" />
-                      In Stock
-                    </Badge>
-                  ) : (
-                    <Badge variant="secondary">Out of Stock</Badge>
-                  )}
                 </div>
                 <h1 className="text-3xl md:text-4xl font-bold mb-4">{product.name}</h1>
                 <p className="text-lg text-muted-foreground mb-6">{product.fullDescription}</p>
-                {product.price && <div className="text-3xl font-bold text-primary mb-6">{product.price}</div>}
               </div>
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="flex-1" disabled={!product.inStock}>
+                <Button size="lg" className="flex-1">
                   <ShoppingCart className="mr-2 h-5 w-5" />
                   Request Quote
                 </Button>
@@ -162,9 +153,6 @@ export default function ProductDetailClient() {
                     </Badge>
                     <CardTitle className="text-lg mb-2">{relatedProduct.name}</CardTitle>
                     <CardDescription className="text-sm mb-3">{relatedProduct.description}</CardDescription>
-                    {relatedProduct.price && (
-                      <p className="text-lg font-semibold text-primary mb-3">{relatedProduct.price}</p>
-                    )}
                     <Button variant="ghost" size="sm" className="w-full" asChild>
                       <Link href={`/products/${relatedProduct.id}`}>{t("viewDetails")}</Link>
                     </Button>

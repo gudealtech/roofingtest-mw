@@ -7,7 +7,17 @@ import { useLanguage } from "@/hooks/use-language"
 import { languages, type Language } from "@/lib/i18n"
 
 export function LanguageSelector() {
-  const { language, setLanguage } = useLanguage()
+  const { language, setLanguage, isLoaded } = useLanguage()
+
+  if (!isLoaded) {
+    return (
+      <Button variant="ghost" size="sm" className="gap-2" disabled>
+        <Globe className="h-4 w-4" />
+        <span className="hidden sm:inline">Loading...</span>
+        <ChevronDown className="h-4 w-4" />
+      </Button>
+    )
+  }
 
   return (
     <DropdownMenu>

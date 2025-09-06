@@ -16,8 +16,8 @@ export const translations = {
     contact: "Contact",
 
     // Homepage
-    heroTitle: "Reliable Roofing Materials for Professionals",
-    heroSubtitle: "Wholesale supply for contractors and distributors",
+    heroTitle: "Reliable Roofing Materials for Canadian Professionals",
+    heroSubtitle: "Wholesale supply for contractors and distributors across Canada",
     exploreProducts: "Explore Products",
     contactUs: "Contact Us",
     featuredProducts: "Featured Products",
@@ -44,7 +44,7 @@ export const translations = {
     address: "Address",
 
     // Footer
-    copyright: "© 2024 Professional Roofing Materials. All rights reserved.",
+    copyright: "© 2024 Gudeal Canada Inc. All rights reserved.",
   },
   zh: {
     // Navigation
@@ -54,8 +54,8 @@ export const translations = {
     contact: "联系我们",
 
     // Homepage
-    heroTitle: "专业人士的可靠屋顶材料",
-    heroSubtitle: "为承包商和经销商提供批发供应",
+    heroTitle: "为加拿大专业人士提供可靠的屋顶材料",
+    heroSubtitle: "为加拿大各地的承包商和经销商提供批发供应",
     exploreProducts: "浏览产品",
     contactUs: "联系我们",
     featuredProducts: "精选产品",
@@ -82,7 +82,7 @@ export const translations = {
     address: "地址",
 
     // Footer
-    copyright: "© 2024 专业屋顶材料公司。保留所有权利。",
+    copyright: "© 2024 加拿大古迪尔公司。保留所有权利。",
   },
   fa: {
     // Navigation
@@ -92,8 +92,8 @@ export const translations = {
     contact: "تماس با ما",
 
     // Homepage
-    heroTitle: "مواد پوشش بام قابل اعتماد برای متخصصان",
-    heroSubtitle: "تامین عمده فروشی برای پیمانکاران و توزیع کنندگان",
+    heroTitle: "مواد پوشش بام قابل اعتماد برای متخصصان کانادایی",
+    heroSubtitle: "تامین عمده فروشی برای پیمانکاران و توزیع کنندگان در سراسر کانادا",
     exploreProducts: "مشاهده محصولات",
     contactUs: "تماس با ما",
     featuredProducts: "محصولات ویژه",
@@ -120,7 +120,7 @@ export const translations = {
     address: "آدرس",
 
     // Footer
-    copyright: "© ۲۰۲۴ مواد پوشش بام حرفه ای. تمام حقوق محفوظ است.",
+    copyright: "© ۲۰۲۴ گودیل کانادا اینک. تمام حقوق محفوظ است.",
   },
   ru: {
     // Navigation
@@ -130,8 +130,8 @@ export const translations = {
     contact: "Контакты",
 
     // Homepage
-    heroTitle: "Надежные кровельные материалы для профессионалов",
-    heroSubtitle: "Оптовые поставки для подрядчиков и дистрибьюторов",
+    heroTitle: "Надежные кровельные материалы для канадских профессионалов",
+    heroSubtitle: "Оптовые поставки для подрядчиков и дистрибьюторов по всей Канаде",
     exploreProducts: "Посмотреть продукцию",
     contactUs: "Связаться с нами",
     featuredProducts: "Рекомендуемые продукты",
@@ -158,7 +158,7 @@ export const translations = {
     address: "Адрес",
 
     // Footer
-    copyright: "© 2024 Профессиональные кровельные материалы. Все права защищены.",
+    copyright: "© 2024 Гудил Канада Инк. Все права защищены.",
   },
 }
 

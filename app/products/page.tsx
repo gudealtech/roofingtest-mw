@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { ArrowRight, Search, Filter } from "lucide-react"
 import Link from "next/link"
 import { SiteHeader } from "@/components/site-header"
-import { categories, getProductsByCategory } from "@/lib/products"
+import { getProductsByCategory, categories } from "@/lib/products"
 
 export default function ProductsPage() {
   const { t } = useLanguage()
@@ -21,6 +21,8 @@ export default function ProductsPage() {
       product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       product.description.toLowerCase().includes(searchQuery.toLowerCase()),
   )
+
+  const filterCategories = categories
 
   return (
     <div className="min-h-screen bg-background">
@@ -46,7 +48,7 @@ export default function ProductsPage() {
           <div className="flex flex-col lg:flex-row gap-6 items-start lg:items-center justify-between">
             {/* Category Filters */}
             <div className="flex flex-wrap gap-2">
-              {categories.map((category) => (
+              {filterCategories.map((category) => (
                 <Button
                   key={category.key}
                   variant={selectedCategory === category.key ? "default" : "outline"}
@@ -54,7 +56,7 @@ export default function ProductsPage() {
                   onClick={() => setSelectedCategory(category.key)}
                   className="text-sm"
                 >
-                  {t(category.key === "all" ? "allProducts" : category.key)}
+                  {category.label}
                 </Button>
               ))}
             </div>
@@ -105,21 +107,11 @@ export default function ProductsPage() {
                     <CardContent className="p-4">
                       <div className="flex items-center justify-between mb-2">
                         <Badge variant="outline" className="text-xs">
-                          {t(product.category)}
+                          {product.category}
                         </Badge>
-                        {product.inStock ? (
-                          <Badge variant="default" className="text-xs bg-green-100 text-green-800 border-green-200">
-                            In Stock
-                          </Badge>
-                        ) : (
-                          <Badge variant="secondary" className="text-xs">
-                            Out of Stock
-                          </Badge>
-                        )}
                       </div>
                       <CardTitle className="text-lg mb-2 line-clamp-2">{product.name}</CardTitle>
                       <CardDescription className="text-sm mb-3 line-clamp-3">{product.description}</CardDescription>
-                      {product.price && <p className="text-lg font-semibold text-primary mb-3">{product.price}</p>}
                       <Button variant="ghost" size="sm" className="w-full justify-between p-0 h-auto" asChild>
                         <Link href={`/products/${product.id}`} className="flex items-center justify-between w-full p-3">
                           {t("viewDetails")}

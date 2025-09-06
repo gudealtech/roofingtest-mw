@@ -85,23 +85,24 @@ export default function ServicesPage() {
   const benefits = [
     {
       icon: <Star className="h-6 w-6" />,
-      title: "25+ Years Experience",
-      description: "Serving the roofing industry with expertise and reliability",
+      title: "5+ Years Experience",
+      description: "Comprehensive product range from underlayment and ice shields to tools and hardware",
     },
     {
       icon: <CheckCircle className="h-6 w-6" />,
-      title: "99% On-Time Delivery",
-      description: "Consistent, reliable delivery to keep your projects on schedule",
+      title: "Competitive Pricing",
+      description: "High-quality materials at prices that protect your bottom line",
     },
     {
       icon: <Award className="h-6 w-6" />,
-      title: "Certified Products",
+      title: "Quality Guaranteed",
       description: "All materials meet industry standards and manufacturer specifications",
     },
     {
       icon: <Clock className="h-6 w-6" />,
-      title: "24/7 Support",
-      description: "Round-the-clock customer service for urgent project needs",
+      title: "Flexible Pickup Hours",
+      description:
+        "Open 7 days a week including weekends, holidays & evenings - same-day appointments by phone (normally 30 mins ahead)",
     },
   ]
 
@@ -159,9 +160,9 @@ export default function ServicesPage() {
       <section className="py-16 lg:py-24 bg-muted/50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose RoofMaterials</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Gudeal Canada</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              We're committed to providing exceptional service and quality materials to help your business thrive.
+              Your trusted roofing materials partner with competitive pricing and flexible service across Canada.
             </p>
           </div>
 
